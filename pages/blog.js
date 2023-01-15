@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import "../styles/blog.module.css"
+import styles from "../styles/blog.module.css"
 
 const Blog = ({ data, location }) => {
 
@@ -15,7 +15,7 @@ const Blog = ({ data, location }) => {
     return (
       <Layout>
         <Header title={"blog"}/>
-        <div className="page-content">
+        <div className={styles["page-content"]}>
           <Seo title="All posts" />
           <p>
             No blog posts found. Add markdown posts to "content/blog" (or the
@@ -30,7 +30,7 @@ const Blog = ({ data, location }) => {
   return (
     <Layout>
       <Header title="blog"/>
-      <div className="page-content">
+      <div className={styles["page-content"]}>
         <Seo title="All posts" />
         <h1>Posts</h1>
         <ol style={{ listStyle: `none` }}>
@@ -40,7 +40,7 @@ const Blog = ({ data, location }) => {
             return (
               <li key={post.fields.slug}>
                 <article
-                  className="post-list-item"
+                  className={styles["post-list-item"]}
                   itemScope
                   itemType="http://schema.org/Article"
                 >

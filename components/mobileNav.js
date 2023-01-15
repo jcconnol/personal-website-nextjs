@@ -1,12 +1,12 @@
 import React from "react"
 import Link from 'next/link';
-import "../styles/mobilenav.module.css"
+import styles from "../styles/mobilenav.module.css"
 
 export default function MobileNav({ menuItems }) {
   
   return (
-    <div className="overlay navigation">
-        <div className="overlay-content">
+    <div className={`${styles.overlay} ${styles.navigation}`}>
+        <div className={styles["overlay-content"]}>
           {
             menuItems.map((item, index) => {
               return (

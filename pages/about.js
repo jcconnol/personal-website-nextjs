@@ -3,15 +3,15 @@ import Footer from "../components/footer"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import "../styles/page.module.css"
-import "../styles/about.module.css"
+// import styles from "../styles/page.module.css"
+import styles from "../styles/about.module.css"
 
 export default function Index() {
   /* TODO improvement is to make map and have info be in json file */
   return (
     <Layout>
       <Header title={"about"}/>
-      <div className="page-content about-content fadeIn">
+      <div className={`${styles["page-content"]} ${styles["about-content"]} ${styles.fadeIn}`}>
         <Seo
           title={"About"}
           description={"About page for John Connolly. A tale about my life's story and work history."}

@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.footer {
+footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
@@ -21,7 +21,7 @@
   align-items: center;
 }
 
-.footer a {
+footer a {
   display: flex;
   justify-content: center;
   align-items: center;

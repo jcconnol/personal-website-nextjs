@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/project-card.module.css"
+import styles from "../styles/project-card.module.css"
 import OpenFolderIcon from "./static/folder_open_icon.svg"
 import GithubIcon from "./static/github_icon.svg"
 
@@ -26,23 +26,23 @@ const ProjectCard = (props) => {
 
     return (
         blankCard ?
-            <div className="index-blank-card"></div>
+            <div className={styles["index-blank-card"]}></div>
         :
-            <div className="index-project-inner">
+            <div className={styles["index-project-inner"]}>
                 <h4>{title}</h4>
                 <p>{description}</p>
-                <div className="index-project-imgs">
+                <div className={styles["index-project-imgs"]}>
                     {
                         showProject ?
                         <a href={projectLink}>
-                            <img className="index-folder-project-image" src={OpenFolderIcon} alt="folder icon" />
+                            <img className={styles["index-folder-project-image"]} src={OpenFolderIcon} alt="folder icon" />
                         </a>
                         : null
                     }
                     {
                         showGithub ?
                         <a href={githubLink}>
-                            <img className="index-github-project-image" src={GithubIcon} alt="github icon" />
+                            <img className={styles["index-github-project-image"]} src={GithubIcon} alt="github icon" />
                         </a>
                         : null
                     }

@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React from "react";
-import "../styles/contactForm.module.css"
+import styles from "../styles/contactForm.module.css"
 
 //TODO make form disappear after submitted
 const ContactForm = (props) => {
@@ -73,7 +73,7 @@ const ContactForm = (props) => {
     }
 
     return (
-        <div className="contact-form">
+        <div className={styles["contact-form"]}>
             {
                 formDisplay.showForm ?
                     <form acceptCharset="UTF-8" onSubmit={e => {handleSubmit(e)}} target="_blank">
@@ -81,7 +81,7 @@ const ContactForm = (props) => {
                             <label>Full Name</label>
                             <div>
                                 <input 
-                                    className="contact-name-input" 
+                                    className={styles["contact-name-input"]}
                                     onChange={handleChange} 
                                     type="text" name="name" 
                                     placeholder=" Enter your first and last name" 
@@ -93,7 +93,7 @@ const ContactForm = (props) => {
                             <label>Email address</label>
                             <div>
                                 <input
-                                    className="contact-email-input" 
+                                    className={styles["contact-email-input"]}
                                     type="email" 
                                     name="email"
                                     onChange={handleChange}
@@ -106,7 +106,7 @@ const ContactForm = (props) => {
                             <label>Message</label>
                             <div>
                                 <textarea 
-                                    className="contact-message-input" 
+                                    className={styles["contact-message-input" ]}
                                     type="text" name="message"
                                     onChange={handleChange} 
                                     placeholder=" Enter your message" 
@@ -119,7 +119,7 @@ const ContactForm = (props) => {
                                 <p><b>Something went wrong, please try again later or email me directly.</b></p>
                             : null
                         }
-                        <button className="contact-submit-button" type="submit">SUBMIT</button>
+                        <button className={styles["contact-submit-button"]} type="submit">SUBMIT</button>
                     </form>
                 : null
             }

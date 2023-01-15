@@ -1,10 +1,10 @@
 import React from "react"
-import "../styles/main.module.css"
+import styles from "../styles/main.module.css"
 
 export default function Main({ children }) {
   return (
-    <div className="content">
-        <div className="body-section flex items-center justify-center">
+    <div className={styles.content}>
+        <div className={`${styles["body-section"]} ${styles.flex} ${styles["items-center"]} ${styles["justify-center"]}`}>
             {children}
         </div>
     </div>

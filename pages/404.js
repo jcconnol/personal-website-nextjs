@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Layout from '../components/layout'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import "../styles/page.module.css"
+import styles from "../styles/page.module.css"
 import Kitten from "../components/static/kitten.png"
 import Puppy from "../components/static/puppy.png"
 
@@ -10,11 +10,10 @@ const NotFoundPage = () => {
   //TODO change dog photo to picture of cat on throne
   const [imageType, setImage] = useState("1");
   
-  console.log(imageType)
   return (
     <Layout>
       <Header title="404" />
-      <div className="page-content">
+      <div className={styles['page-content']}>
         <h1>
           <b>404 page not found!</b>
         </h1>
@@ -40,7 +39,7 @@ const NotFoundPage = () => {
                 here
             </button>)
         </p>
-        <div className="center">
+        <div className={styles.center}>
           <img style={{
             width: "40%",
             height: "40%",
@@ -50,7 +49,7 @@ const NotFoundPage = () => {
             alt={(imageType ? "adorable kitten" : "cute puppy")}
           />
         </div>
-        <div className="center" style={{
+        <div className={styles.center} style={{
           paddingBottom: "5%"
         }}>
           <a href="/">Go Back.</a>

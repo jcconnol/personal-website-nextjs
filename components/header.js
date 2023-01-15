@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import MobileNav from "../components/mobileNav"
-import "../styles/header.module.css"
+import styles from "../styles/header.module.css"
 
 export default function Header(props) {
   //make rounded edges on header buttons
@@ -49,11 +49,11 @@ export default function Header(props) {
       <nav style={{
         backgroundColor: backgroundColor
       }}>
-        <div className="header topnav" id="myTopnav" style={{
+        <div className={`${styles.header} ${styles.topnav}`} id="myTopnav" style={{
           color: textColor,
           backgroundColor: backgroundColor
         }}>
-          <Link className="left" to="/" href="/"
+          <Link className={styles.left} to="/" href="/"
             style={buttonStyles[1]}
             onMouseEnter={() => setStyles(1)}
             onMouseLeave={() => setStyles()}
@@ -70,9 +70,9 @@ export default function Header(props) {
               )
             })
           }
-          <div className="header-icon" onClick={() => setShowMobileNav(!showMobileNav)}>&#9776;</div>
+          <div className={styles["header-icon"]} onClick={() => setShowMobileNav(!showMobileNav)}>&#9776;</div>
         </div>
-        <div className={showMobileNav ? "mobile-nav menu-section" : "hidden menu-section" }>
+        <div className={showMobileNav ? styles["mobile-nav menu-section"] : `${styles.hidden} ${styles["menu-section"]}` }>
           <MobileNav menuItems={menuItems} />
         </div>
       </nav>

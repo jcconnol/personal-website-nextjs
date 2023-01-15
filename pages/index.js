@@ -5,7 +5,7 @@ import Header from "../components/header"
 import Seo from "../components/seo"
 import ProjectCard from "../components/projectCard"
 import IndexPageItems from "../components/indexPageItems"
-import "../styles/index.module.css"
+import styles from "../styles/index.module.css"
 
 //TODO add github squares at the bottom of the index page
 export default function Index() {
@@ -33,14 +33,14 @@ export default function Index() {
           title={"JCC"}
           description={"Main page for the personal website of John Connolly."}
         />
-          <div className="space-container">
-            <div className="stars"></div>
-            <div className="twinkling"></div>
-            <div className="shooting-star-container">
+          <div className={styles["space-container"]}>
+            <div className={styles.stars}></div>
+            <div className={styles.twinkling}></div>
+            <div className={styles["shooting-star-container"]}>
               {
                 shootingStarObject.map(element => (
                   <span 
-                    className="shooting-star"
+                    className={styles["shooting-star"]}
                     style={{
                       top: element.top,
                       left: element.left,
@@ -50,19 +50,19 @@ export default function Index() {
                 ))
               }
             </div>
-            <Main className="">
-                <div className="main-inner-container">
-                  <h1 className="fadeIn index-header-text">
-                      <span className="index-name">John Connolly</span>
+            <Main className="main">
+                <div className={styles["main-inner-container"]}>
+                  <h1 className={`${styles.fadeIn} ${styles["index-header-text"]} h1`}>
+                      <span className={styles["index-name"]}>John Connolly</span>
                   </h1>
-                  <h3 className="fadeIn index-subtext">
+                  <h3 className={`${styles.fadeIn} ${styles["index-subtext"]}`}>
                       Engineer. Tester. Automator.
                   </h3>
-                  <div className="index-card-container fadeIn">
+                  <div className={`${styles["index-card-container"]} ${styles.fadeIn}`}>
                     {
                       IndexPageItems.map(item => {
                         return (
-                          <div className="index-card">
+                          <div className={styles["index-card"]}>
                             <ProjectCard 
                               title={item.title}
                               description={item.description}

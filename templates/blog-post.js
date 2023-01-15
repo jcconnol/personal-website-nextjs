@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import "../styles/blog.css"
+import styles from "../styles/blog.css"
 
 //deckDeckGoElement();
 

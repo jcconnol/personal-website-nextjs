@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import ContactForm from "../components/contactForm"
 import Seo from "../components/seo"
 import Header from "../components/header"
-import "../styles/contact.module.css"
+import styles from "../styles/contact.module.css"
 
 export default function Index() {
   //TODO make contact form go away after it is submitted
@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <Layout>
       <Header title="contact"/>
-      <div className="page-content contact-content fadeIn">
+      <div className={`${styles["page-content"]} ${styles["contact-content"]} ${styles.fadeIn}`}>
         <Seo
           title={"Contact"}
           description={"Contact page for John Connolly. Feel free to message me through social media or fill out the form below."}

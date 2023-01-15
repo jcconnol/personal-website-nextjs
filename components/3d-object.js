@@ -1,5 +1,5 @@
 import * as React from "react"
-import "../styles/3d-object.module.css"
+import styles from "../styles/3d-object.module.css"
 import { Unity, useUnityContext } from "react-unity-webgl";
 import BuildLoader from "./static/unity-build/build.loader"
 import Webgl from "./static/unity-build/webgl.data"
@@ -15,7 +15,7 @@ const ThreeDUnityObject = (props) => {
     });
     
     return (
-        <div className="game-container" >
+        <div className={styles["game-container"]} >
             <Unity
                 unityProvider={unityProvider}
                 style={{ width: "90%", height: "100%" }}

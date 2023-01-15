@@ -1,13 +1,13 @@
 import * as React from "react"
-import "../styles/sidebar.module.css"
+import styles from "../styles/sidebar.module.css"
 import GithubIcon from "./static/github_icon.svg"
 import LinkedinIcon from "./static/linkedin_icon.svg"
 import FacebookIcon from "./static/facebook_icon.svg"
 
 export default function LeftSidebar() {
   return (
-    <div className="left-sidebar">
-      <ul className="left-sidebar-inner">
+    <div className={styles["left-sidebar"]}>
+      <ul className={styles["left-sidebar-inner"]}>
         <li>
           <a href="https://github.com/jcconnol" target="_blank" rel="noreferrer">
             <img src={GithubIcon} alt="github icon" />

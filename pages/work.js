@@ -3,7 +3,7 @@ import Footer from "../components/footer"
 import Header from "../components/header"
 import GithubProject from "../components/github-project"
 import ProjectData from "../components/projectItems"
-import "../styles/work.module.css"
+import styles from "../styles/work.module.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <Layout>
       <Header title="work"/>
-      <div className="page-content work-content fadeIn">
+      <div className={`${styles["page-content"]} ${styles["work-content"]} ${styles.fadeIn}`}>
         <Seo
           title={"Work"}
           description={"Main page for the personal website of John Connolly."}
@@ -20,12 +20,12 @@ export default function Index() {
           <b>Work</b>
         </h1>
         <div>
-          <p className="center"><b>What I have built or am currently building...</b></p>
-          <div className="project-grid">
+          <p className={styles.center}><b>What I have built or am currently building...</b></p>
+          <div className={styles["project-grid"]}>
             {
               ProjectData.map(item => {
                 return (
-                  <div className="project">
+                  <div className={styles.project}>
                     <GithubProject 
                       title={item.title}
                       description={item.description}
