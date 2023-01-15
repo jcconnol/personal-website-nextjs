@@ -1,0 +1,33 @@
+.project h4 {
+    margin-top: 5%;
+    font-size: 1.25em;
+}
+
+.project-inner {
+    background-color: #edeeee;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.75rem;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px darkgray;
+}
+
+.project-inner .project-imgs {
+    text-align: right;
+}
+
+.folder-project-image {
+    height: 32px;
+    width: 32px;
+    margin-right: 5%;
+}
+
+.blank-card {
+    background-color: white;
+}

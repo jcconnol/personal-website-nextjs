@@ -1,0 +1,65 @@
+.center {
+    text-align: center;
+}
+
+.work-content {
+    color: black;
+    letter-spacing: 1.2px;
+}
+
+.project-grid {
+    display: flex;
+	flex-wrap: wrap;
+    margin: auto;
+   
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ .fadeIn {
+    -webkit-animation: fadeIn 2.3s;
+    animation: fadeIn 2.3s;
+ }
+
+@media (max-width: 725px) {
+    .project {
+        max-width: 100%;
+        flex: 1 0 100%;
+        box-sizing: border-box;
+        background-color: white;
+        color: black;
+        padding: 5%;
+    }
+}
+
+@media (min-width: 725px) {
+    .project {
+        max-width: 50%;
+        flex: 1 0 50%;
+        box-sizing: border-box;
+        color: black;
+        padding: 2%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .project {
+        max-width: 33%;
+        flex: 1 0 33%;
+        box-sizing: border-box;
+        background-color: white;
+        color: black;
+        padding: 2%;
+    }
+}
+
+.project-imgs {
+    display: flex;
+}
+
+.project-imgs a{
+    padding: 0 6%;    
+}

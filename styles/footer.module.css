@@ -1,0 +1,30 @@
+.footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-images-container {
+    margin-left: 2%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    color: black;
+    padding: 3px;
+}
+
+.footer-line {
+    color: darkgray;
+    width: 75%;
+    margin: auto;
+    size: 25px;
+}
+
+.footer-image {
+    color: black;
+    padding: 0 0.5em 0.5em 0.5em;
+}

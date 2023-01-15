@@ -1,0 +1,14 @@
+h3 {
+    text-align: left;
+}
+
+.blog-post {
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 800px) {
+    .blog-post {
+        margin: auto;
+    }
+}

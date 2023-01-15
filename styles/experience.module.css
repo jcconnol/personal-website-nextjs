@@ -1,0 +1,35 @@
+@media screen and (max-width: 625px) {
+    h1 b{
+        font-size: 13vw;
+    }
+}
+
+@media screen and (min-width: 625px) {
+    h1 b{
+        font-size: 6vw;
+    }
+}
+
+.page-content {
+    margin-top: 0;
+    background: white;
+}
+
+.experience-content {
+    color: black;
+    letter-spacing: 1.2px;
+}
+
+.experience-content a {
+    letter-spacing: 1.2px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ .fadeIn {
+    -webkit-animation: fadeIn 2.3s;
+    animation: fadeIn 2.3s;
+ }

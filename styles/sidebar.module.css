@@ -1,0 +1,110 @@
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+@media (min-width: 625px){
+
+    /* right sidebar CSS */
+    .right-sidebar {
+        width: 40px;
+        position: fixed;
+        bottom: 0px;
+        left: auto;
+        right: 40px;
+        z-index: 10;
+    }
+    
+    .right-sidebar-inner {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .right-sidebar-text{
+        margin: 20px auto;
+        padding: 10px;
+        letter-spacing: 0.1em;
+        writing-mode: vertical-rl;
+    }
+    
+    .right-sidebar-inner:after {
+        content: "";
+        display: block;
+        width: 3px;
+        height: 110px;
+        margin: 0px auto;
+        background-color: darkgray;
+    }
+    
+    .right-vertical-text {
+        margin: 20px auto;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        text-decoration: none;
+        color: black;
+    }
+
+    .right-vertical-text:hover {
+        color: rgb(1, 1, 56);
+    }
+
+    /* Left sidebar CSS */
+    .left-sidebar {
+        width: 40px;
+        position: fixed;
+        bottom: 0px;
+        z-index: 10;
+        color: darkgray;
+        left: 20px;
+        right: auto;
+    }
+    
+    .left-sidebar-inner {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+
+    .left-sidebar-inner li {
+        padding: 5px;
+    }
+
+    .left-sidebar-inner a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .left-sidebar-inner li:last-child {
+        padding-bottom: 15px;
+    }
+
+    .left-sidebar-inner::after {
+        content: "";
+        margin-left: 20px;
+        display: block;
+        width: 3px;
+        height: 110px;
+        margin: 0px auto;
+        background-color: darkgray;
+    }
+}
+
+@media (max-width: 625px){
+    .right-sidebar {
+        visibility: none;
+        display: none;
+        color: black;
+    }
+
+    .left-sidebar {
+        visibility: none;
+        display: none;
+    }
+}

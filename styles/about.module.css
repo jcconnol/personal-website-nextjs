@@ -1,0 +1,24 @@
+.page-content {
+    margin-top: 0;
+    padding-top: 8%;
+    background: white;
+}
+
+.about-content {
+    color: black;
+    letter-spacing: 1.2px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ .fadeIn {
+    -webkit-animation: fadeIn 2.3s;
+    animation: fadeIn 2.3s;
+ }
+
+.about-content ul li {
+    padding-bottom: 0.75rem;
+}

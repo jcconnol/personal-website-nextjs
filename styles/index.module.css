@@ -1,0 +1,182 @@
+.main-inner-container {
+    margin-top: 8%;
+    overflow-y: hidden;
+    color: #FFF;
+    z-index: 2;
+}
+
+.space-container {
+    height: 100%;
+}
+
+.content {
+    z-index: 3;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ .fadeIn {
+    -webkit-animation: fadeIn 2.3s;
+    animation: fadeIn 2.3s;
+ }
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.shooting-star-container {
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.shooting-star {
+    display:block;
+    width:4px;
+    height:4px;
+    border-radius:50%;
+    background:#FFF;
+    position:absolute;
+    transform-origin:100% 0;
+    animation: star-ani 25s infinite ease-out;
+    -webkit-animation: star-ani 25s infinite ease-out;
+    -moz-animation:star-ani 25s infinite ease-out;
+    -o-animation:star-ani 25s infinite ease-out;
+    animation-direction: normal;
+    opacity:0;
+    z-index:4;
+}
+
+.shooting-star:after {
+    content:'';
+    position:absolute;
+    width:4px;
+    height:4px;
+    border:2px solid #F00;
+    border-width:2px 150px 2px 150px; 
+    border-color:transparent transparent transparent #FFF;
+    transform:rotate(-45deg) translate(1px, -1px);
+    transform-origin:0% 100%;
+    animation:shooting-ani 25s infinite  ease-out;
+    -webkit-animation: shooting-ani 25s infinite ease-out;
+    -moz-animation:shooting-ani 25s infinite ease-out;
+    -o-animation:shooting-ani 25s infinite ease-out;
+    animation-direction: normal;
+    z-index:4;
+}
+
+@keyframes shooting-ani {
+    0% {
+        left:100%; top:0%;
+    }
+    5% {
+        
+      transform:scale(1) rotate(-45deg) translate(0px, 0px);
+    }
+    100% {
+        
+        transform:scale(1) rotate(-45deg) translate(0px, 0px);
+    }
+}
+  
+@keyframes star-ani {
+    0% {
+      opacity:1;
+      transform:scale(0) rotate(0) translate(0, 0);
+    }
+    5% {
+        opacity:0;
+        transform:scale(1) rotate(0) translate(-1000px, 1000px);
+    }
+    100% {
+      opacity:0;
+      transform:scale(1) rotate(0) translate(-1000px, 1000px);
+    }
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+
+.stars, .twinkling {
+    height: 100%;
+    position:absolute;
+    top: 3.5rem;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:auto;
+    display:block;
+    overflow: hidden;
+  }
+  
+  .stars {
+    height: 100%;
+    background:url("/images/stars.png") repeat top center;
+    background-color: #000;
+    z-index:1;
+  }
+  
+  .twinkling{
+    height: 100%;
+    z-index:1;
+    background: url("/images/twinkling.png") repeat top center;
+    -moz-animation:move-twink-back 200s linear infinite;
+    -ms-animation:move-twink-back 200s linear infinite;
+    -o-animation:move-twink-back 200s linear infinite;
+    -webkit-animation:move-twink-back 200s linear infinite;
+    animation:move-twink-back 200s linear infinite;
+}
+
+.index-header-text {
+    text-align: center;
+}
+
+.index-subtext {
+    text-align: center;
+}
+
+.index-card-container {
+    padding: 2% 15% 0 15%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    min-height: 5%;
+    align-items: flex-start;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+}
+
+.index-card {
+    width: 30%;
+    padding: auto;
+    justify-content: center;
+}

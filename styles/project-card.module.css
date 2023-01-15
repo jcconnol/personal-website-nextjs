@@ -1,0 +1,57 @@
+.index-project-inner h4 {
+    margin-top: 5%;
+    background-color: transparent;
+    font-size: 1.25em;
+    margin: auto;
+}
+
+.index-project-inner {
+    color: white;
+    border: 5px solid white;
+    text-align: center;
+    background-color: transparent;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.75rem;
+    border-radius: 15px;
+    
+}
+
+.index-project-inner .project-imgs {
+    text-align: center;
+    justify-content: center;
+}
+
+.index-project-imgs {
+    display: inline-flex;
+}
+
+.index-project-imgs a {
+    padding: 0% 15%;
+    justify-content: center;
+}
+
+.index-folder-project-image {
+    height: 32px;
+    width: 32px;
+    margin-right: 5%;
+    filter: invert(1);
+}
+
+.index-github-project-image {
+    filter: invert(1);
+}
+
+.index-blank-card {
+    background-color: transparent;
+}
+
+.index-project-card {
+    padding-bottom: inherit;
+}

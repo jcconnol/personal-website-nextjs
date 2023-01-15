@@ -1,0 +1,61 @@
+.topnav {
+  overflow: hidden;
+  padding: 5px;
+  display:-webkit-flex;
+  list-style-type:none;
+  justify-content:flex-end;
+}
+
+.topnav a,
+.topnav div {
+  border-radius: 5px;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.topnav .header-icon {
+  display: none;
+}
+
+/*
+.topnav a:hover {
+  background-color: #252525;
+  color: white;
+}
+*/
+.left {
+  margin-right:auto;
+}
+
+@media screen and (max-width: 625px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav div.header-icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .header-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+  }
+}
