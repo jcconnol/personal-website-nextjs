@@ -7,9 +7,9 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import styles from "../styles/blog.module.css"
 
-const Blog = ({ data, location }) => {
+const Blog = () => {
 
-  const posts = data.allMarkdownRemark.nodes
+  const posts = []
 
   if (posts.length === 0) {
     return (
@@ -73,25 +73,25 @@ const Blog = ({ data, location }) => {
 
 export default Blog;
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+//       nodes {
+//         excerpt
+//         fields {
+//           slug
+//         }
+//         frontmatter {
+//           date(formatString: "MMMM DD, YYYY")
+//           title
+//           description
+//         }
+//       }
+//     }
+//   }
+// `

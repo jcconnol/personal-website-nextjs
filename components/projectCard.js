@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "../styles/project-card.module.css"
-import OpenFolderIcon from "./static/folder_open_icon.svg"
-import GithubIcon from "./static/github_icon.svg"
+import OpenFolderIcon from "../public/folder_open_icon.svg"
+import GithubIcon from "../public/github_icon.svg"
 
 const ProjectCard = (props) => {
     var title = props.title;

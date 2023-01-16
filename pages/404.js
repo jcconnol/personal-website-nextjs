@@ -3,8 +3,8 @@ import Layout from '../components/layout'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import styles from "../styles/page.module.css"
-import Kitten from "../components/static/kitten.png"
-import Puppy from "../components/static/puppy.png"
+import Kitten from "../public/kitten.png"
+import Puppy from "../public/puppy.png"
 
 const NotFoundPage = () => {
   //TODO change dog photo to picture of cat on throne

@@ -1,8 +1,8 @@
 import * as React from "react"
 import styles from "../styles/sidebar.module.css"
-import GithubIcon from "./static/github_icon.svg"
-import LinkedinIcon from "./static/linkedin_icon.svg"
-import FacebookIcon from "./static/facebook_icon.svg"
+import GithubIcon from "../public/github_icon.svg"
+import LinkedinIcon from "../public/linkedin_icon.svg"
+import FacebookIcon from "../public/facebook_icon.svg"
 
 export default function LeftSidebar() {
   return (
