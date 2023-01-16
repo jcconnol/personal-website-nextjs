@@ -3,8 +3,8 @@ import Layout from '../components/layout'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import styles from "../styles/page.module.css"
-import Kitten from "../public/kitten.png"
-import Puppy from "../public/puppy.png"
+// import Kitten from "../kitten.png"
+// import Puppy from "../puppy.png"
 
 const NotFoundPage = () => {
   //TODO change dog photo to picture of cat on throne
@@ -45,7 +45,7 @@ const NotFoundPage = () => {
             height: "40%",
             paddingBottom: "5%"
           }}
-            src={(imageType ? Kitten : Puppy)}
+            src={(imageType ? '../kitten.png' : '../puppy.png')}
             alt={(imageType ? "adorable kitten" : "cute puppy")}
           />
         </div>

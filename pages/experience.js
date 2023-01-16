@@ -9,6 +9,20 @@ export default function Index() {
   /* improvement is to make map and have info be in json file */
   return (
     <Layout>
+      <style jsx>{`
+        @media screen and (max-width: 625px) {
+          h1 b{
+              font-size: 13vw;
+          }
+        }
+        
+        @media screen and (min-width: 625px) {
+            h1 b{
+                font-size: 6vw;
+            }
+        }
+      `}
+      </style>
       <Header title="experience"/>
       <div className={`${styles["page-content"]} ${styles["experience-content"]} ${styles.fadeIn}`}>
         <Seo
