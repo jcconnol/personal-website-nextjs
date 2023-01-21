@@ -1,17 +1,17 @@
 import React, { useState } from "react"
 import Layout from '../components/layout'
+import SEO from "../components/seo"
 import Header from '../components/header'
 import Footer from '../components/footer'
 import styles from "../styles/page.module.css"
-// import Kitten from "../kitten.png"
-// import Puppy from "../puppy.png"
 
-const NotFoundPage = () => {
+const Custom404 = () => {
   //TODO change dog photo to picture of cat on throne
   const [imageType, setImage] = useState("1");
   
   return (
     <Layout>
+      <SEO title="404: Not Found" />
       <Header title="404" />
       <div className={styles['page-content']}>
         <h1>
@@ -60,4 +60,4 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default Custom404
