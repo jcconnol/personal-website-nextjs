@@ -4,9 +4,9 @@ import SEO from "../components/seo"
 import Header from '../components/header'
 import Footer from '../components/footer'
 import styles from "../styles/page.module.css"
+import Link from 'next/link';
 
 const Custom404 = () => {
-  //TODO change dog photo to picture of cat on throne
   const [imageType, setImage] = useState("1");
   
   return (
@@ -21,7 +21,7 @@ const Custom404 = () => {
           textAlign: "center",
           padding: "0% 25%"
         }}>
-          Oops, looks like this page doesn't exist or has not been built yet. 
+          Oops, looks like this page doesn&apos;t exist or has not been built yet. 
           To hopefully make up for this disappointment, there is a picture of a cat.
         </p>
         <p style={{
@@ -52,7 +52,7 @@ const Custom404 = () => {
         <div className={styles.center} style={{
           paddingBottom: "5%"
         }}>
-          <a href="/">Go Back.</a>
+          <Link href="/">Go To Home.</Link>
         </div>
         <Footer />
       </div>

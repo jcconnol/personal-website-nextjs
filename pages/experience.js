@@ -36,7 +36,7 @@ export default function Index() {
           <p><b><u>Test engineering at Ramsey Solutions</u></b></p>
           <p>
             I have been working for <a href="https://www.ramseysolutions.com/">Ramsey solutions</a> since 
-            July 2021 as a test engineer and QA. I moved to Tenessee from Indiana to work there and absolutely
+            July 2021 as a test engineer and QA. I moved to Tennessee from Indiana to work there and absolutely
             love my job and the people I work with! The mission of Ramsey Solutions makes it a wonderful a fulfilling
             place to work.
           </p>
@@ -54,7 +54,7 @@ export default function Index() {
         <div>
           <p><b><u>Base Commissioner for the Boy Scouts of America Brinton Environmental Center</u></b></p>
           <p>
-            Sea Base is comprised of multiple adventures htat scouts can go on. The most common at the Brinton
+            Sea Base is comprised of multiple adventures that scouts can go on. The most common at the Brinton
             Environmental Center is one called Out Island where scouts paddle 6 miles to a deserted island and 
             go camping for 3 days and 4 nights. While there the scouts go deep sea fishing and explore the island.
             As a Base Commissioner I planned logistics for groups going to the island. Ensuring the crews had enough water
@@ -64,18 +64,18 @@ export default function Index() {
         <div>
           <p><b><u>Veterans Association Lab Intern</u></b></p>
           <p>
-            The Veteran's Association in Temple Texas has a research lab that has multiple biological 
-            rearch studies going on. I was fortunate enough to be able to be an intern and work on a few of
+            The Veteran&apos;s Association in Temple Texas has a research lab that has multiple biological 
+            research studies going on. I was fortunate enough to be able to be an intern and work on a few of
             the research projects.
           </p>
           <p>
-            The main study I helped with was a resusitation drug study that was being tested in an Ex-Vivo 
+            The main study I helped with was a resuscitation drug study that was being tested in an Ex-Vivo 
             method. This involved live ultrasounding of lab mice hearts where the mice had a genetic tag that
-            produced a defect in the heart. This made it easier to test resucitation cocktails. 
+            produced a defect in the heart. This made it easier to test resuscitation cocktails. 
           </p>
           <p>
-            Since the current cocktail of resucitation drugs have less than a 5% success rate, research on a 
-            new cocktail of resucitation drugs is necessary and a better one is almost certainly out there.
+            Since the current cocktail of resuscitation drugs have less than a 5% success rate, research on a 
+            new cocktail of resuscitation drugs is necessary and a better one is almost certainly out there.
           </p>
         </div>
         <Footer />

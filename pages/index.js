@@ -37,7 +37,7 @@ export default function Index() {
             <div className={styles.twinkling}></div>
             <div className={styles["shooting-star-container"]}>
               {
-                shootingStarObject.map(element => (
+                shootingStarObject.map((element, index) => (
                   <span 
                     className={styles["shooting-star"]}
                     style={{
@@ -45,6 +45,7 @@ export default function Index() {
                       left: element.left,
                       animationDelay: element.delay
                     }}
+                    key={index}
                   ></span>
                 ))
               }
@@ -102,14 +103,15 @@ export default function Index() {
                   </h3>
                   <div className={`${styles["index-card-container"]} ${styles.fadeIn}`}>
                     {
-                      IndexPageItems.map(item => {
+                      IndexPageItems.map((item, index) => {
                         return (
-                          <div className={styles["index-card"]}>
+                          <div className={styles["index-card"]} key={index}>
                             <ProjectCard 
                               title={item.title}
                               description={item.description}
                               projectLink={item.projectLink}
                               githubLink={item.githubLink}
+                              key={index}
                             />
                           </div>
                         )

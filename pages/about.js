@@ -30,7 +30,7 @@ export default function Index() {
           When attending University of Arkansas in Fayetteville, AR, I wanted to become a doctor.
           I loved the problem solving and fast-paced environment of the medical field and thought it
           was the only field that would allow me to work in that kind of environment. This led me to 
-          complete my Bachelor's of Science in Biology.
+          complete my Bachelor&apos;s of Science in Biology.
         </p>
         <p>
           Half-way through my undergraduate degree, I found computer science and coding. I immediately knew it 

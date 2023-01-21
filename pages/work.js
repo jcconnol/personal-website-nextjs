@@ -23,9 +23,9 @@ export default function Index() {
           <p className={styles.center}><b>What I have built or am currently building...</b></p>
           <div className={styles["project-grid"]}>
             {
-              ProjectData.map(item => {
+              ProjectData.map((item, index) => {
                 return (
-                  <div className={styles.project}>
+                  <div className={styles.project} key={index}>
                     <GithubProject 
                       title={item.title}
                       description={item.description}

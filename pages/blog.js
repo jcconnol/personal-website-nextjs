@@ -23,7 +23,7 @@ const BlogIndex = ({ posts }) => {
     return (
       <Layout>
         <SEO title="All posts" />
-        <p>No blog posts found. Add markdown posts to "content/blog".</p>
+        <p>No blog posts found. Add markdown posts to &ldquo;content/blog.&ldquo;</p>
       </Layout>
     )
   }
@@ -36,10 +36,10 @@ const BlogIndex = ({ posts }) => {
         <h1>
           <b>Blog Posts</b>
         </h1>
-        {posts.map(post => {
+        {posts.map((post, index) => {
           const title = post.frontmatter.title || post.slug
           return (
-            <div className={styles["page-content"]} >
+            <div className={styles["page-content"]} key={index}>
               <article
                 key={"blog/" + post.slug}
                 className="post-list-item"

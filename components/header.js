@@ -62,6 +62,7 @@ export default function Header(props) {
             menuItems.map((item, index) => {
               return (
                 <Link to={item.path} 
+                  key={index}
                   href={item.path}
                   style={buttonStyles[(index+2)]}
                   onMouseEnter={() => setStyles((index+2))}
