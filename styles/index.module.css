@@ -154,10 +154,12 @@
 
 .index-header-text {
     text-align: center;
+    padding-bottom: 1%;
 }
 
 .index-subtext {
     text-align: center;
+    padding-bottom: 3%;
 }
 
 .index-card-container {

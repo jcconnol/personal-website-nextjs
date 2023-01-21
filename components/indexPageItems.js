@@ -7,7 +7,8 @@ const indexPageItems = [
     {
         title: 'Text Generation Bot',
         description: 'This uses Markov Chains to generate different and unique text base on topic. For example, generate a unique poem or rap song.',
-        projectLink: 'https://main.d1y4xtb1b93rjd.amplifyapp.com/'
+        projectLink: 'https://main.d1y4xtb1b93rjd.amplifyapp.com/',
+        githubLink: 'https://github.com/jcconnol/generation-bot-react'
     },
     {
         title: 'Personal Jira Queue',

@@ -7,7 +7,6 @@ import ProjectCard from "../components/projectCard"
 import IndexPageItems from "../components/indexPageItems"
 import styles from "../styles/index.module.css"
 
-//TODO add github squares at the bottom of the index page
 export default function Index() {
   var SHOOTING_STAR_MAX_NUMBER = 15;
 

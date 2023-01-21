@@ -2,6 +2,43 @@
     text-align: left;
 } */
 
+@media (max-width: 630px)  {
+    .page-content {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+  }
+  
+  @media (min-width: 630px)  {
+    .page-content {
+        margin-top: 8%;
+        padding-left: 6.5rem;
+        padding-right: 6.5rem;
+    }
+  
+    .mobile-nav {
+        display: none;
+        visibility: hidden;
+    }
+  }
+  
+  @media (min-width: 1000px)  {
+    .page-content {
+        margin-top: 8%;
+        padding-left: 15.5rem;
+        padding-right: 15.5rem;
+    }
+  
+    .mobile-nav {
+        display: none;
+        visibility: hidden;
+    }
+  }
+  
+  .page-content p {
+    padding-bottom: 25px;
+  }
+
 .blog-post {
     max-width: 1000px;
     margin: auto;

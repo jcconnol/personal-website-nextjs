@@ -3,7 +3,6 @@ import Footer from "../components/footer"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-// import styles from "../styles/page.module.css"
 import styles from "../styles/about.module.css"
 
 export default function Index() {
@@ -43,7 +42,7 @@ export default function Index() {
           <b>If you have a project that you would like help with these are a few 
             things I would be happy join in with:</b>
         </p>
-        <p>
+        <div>
           <ul>
             <li>
               Formatting and outputting data in a RESTFUL API
@@ -64,7 +63,7 @@ export default function Index() {
               Automation of regression and confirmation tests
             </li>
           </ul>
-        </p>
+        </div>
         <Footer />
       </div>
     </Layout>
