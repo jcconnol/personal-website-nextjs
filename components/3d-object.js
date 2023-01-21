@@ -19,7 +19,7 @@ const ThreeDUnityObject = (props) => {
             {/* <Unity
                 unityProvider={unityProvider}
                 style={{ width: "90%", height: "100%" }}
-            /> */}
+            /> */} 
         </div>
     );
 }
