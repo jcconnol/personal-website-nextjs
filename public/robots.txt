@@ -1,0 +1,6 @@
+Sitemap: https://johncc.me/sitemap.xml
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*

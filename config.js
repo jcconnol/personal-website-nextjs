@@ -1,11 +1,11 @@
 export default {
-    title: `Starter Blog`,
+    title: `Portfolio and Blog`,
     author: {
-      name: `Lee Robinson`,
-      summary: `who is a developer, writer, and creator.`,
+      name: `John Connolly`,
+      summary: `An Engineer, Tester and Automator.`,
     },
-    description: `A starter blog converting Gatsby -> Next.`,
+    description: `A portfolio and blog of John Connolly.`,
     social: {
-      twitter: `leeerob`,
+      twitter: `johncconnolly`,
     },
 }
