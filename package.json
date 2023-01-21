@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
+    "postbuild": "node ./scripts/sitemap-generator.mjs",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,10 +13,10 @@
     "@next/mdx": "^13.1.4",
     "axios": "^1.2.2",
     "date-fns": "^2.29.3",
-    "globby": "^11.0.1",
+    "globby": "^11.1.0",
     "gray-matter": "^4.0.3",
     "next": "^13.1.2",
-    "next-sitemap": "^3.1.47",
+    "prettier": "^2.8.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -23,7 +24,8 @@
     "react-markdown": "^8.0.4",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
-    "sitemap": "^7.1.1"
+    "sitemap": "^7.1.1",
+    "unixify": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "8.32.0",

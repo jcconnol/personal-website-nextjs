@@ -1,57 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-          <url>
-    <loc>http://localhost:3000/404</loc>
-    <lastmod>2023-01-21T18:59:59.584Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3000/about</loc>
-    <lastmod>2023-01-21T18:59:59.584Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://johncc.me/about</loc>
   </url>
+
   <url>
-    <loc>http://localhost:3000/blog</loc>
-    <lastmod>2023-01-21T18:59:59.584Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://johncc.me/blog</loc>
   </url>
+
   <url>
-    <loc>http://localhost:3000/contact</loc>
-    <lastmod>2023-01-21T18:59:59.584Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://johncc.me/contact</loc>
   </url>
+
   <url>
-    <loc>http://localhost:3000/experience</loc>
-    <lastmod>2023-01-21T18:59:59.584Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://johncc.me/experience</loc>
   </url>
+
   <url>
-    <loc>http://localhost:3000</loc>
-    <lastmod>2023-01-21T18:59:59.584Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://johncc.me</loc>
   </url>
+
   <url>
-    <loc>http://localhost:3000/test</loc>
-    <lastmod>2023-01-21T18:59:59.584Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://johncc.me/work</loc>
   </url>
+
   <url>
-    <loc>http://localhost:3000/unity-test</loc>
-    <lastmod>2023-01-21T18:59:59.584Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://johncc.me/blog/docker-in-plain-english</loc>
   </url>
+
   <url>
-    <loc>http://localhost:3000/work</loc>
-    <lastmod>2023-01-21T18:59:59.584Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://johncc.me/blog/hello-world</loc>
   </url>
-    </urlset>
+
+  <url>
+    <loc>https://johncc.me/blog/jmeter-load-test</loc>
+  </url>
+
+  <url>
+    <loc>https://johncc.me/blog/rpi-lirc</loc>
+  </url>
+</urlset>
