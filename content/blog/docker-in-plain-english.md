@@ -1,6 +1,7 @@
 ---
 title: Docker in Plain English
 date: "2021-12-16T23:46:37.121Z"
+description: "With all these fancy Docker things that few people seem to know about, here is a simple overview of Docker"
 ---
 
 ## <u>What is Docker?</u>

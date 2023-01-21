@@ -56,7 +56,7 @@ a {
 a {
   color: inherit;
   text-decoration: none;
-  color:darkblue;
+  color: #0000EE;;
 }
 
 @media (prefers-color-scheme: dark) {
