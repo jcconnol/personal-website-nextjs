@@ -99,7 +99,7 @@ export default function Index() {
                       <span className={styles["index-name"]}>John Connolly</span>
                   </h1>
                   <h3 className={`${styles.fadeIn} ${styles["index-subtext"]}`}>
-                      Engineer. Tester. Automator. Colleague of <a href="https://macarthur.me" target="_blank">Alex MacArthur</a>.
+                      Engineer. Tester. Automator.
                   </h3>
                   <div className={`${styles["index-card-container"]} ${styles.fadeIn}`}>
                     {
