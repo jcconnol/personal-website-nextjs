@@ -33,12 +33,25 @@ export default function Index() {
           <b>Experience</b>
         </h1>
         <div>
-          <p><b><u>Test engineering at Ramsey Solutions</u></b></p>
+          <p><b><u>Software Engineer at Ramsey Solutions</u></b></p>
           <p>
             I have been working for <a href="https://www.ramseysolutions.com/">Ramsey solutions</a> since 
-            July 2021 as a test engineer and QA. I moved to Tennessee from Indiana to work there and absolutely
+            July 2022 as a Software Engineer in Test. I currently work with a ruby and rails web app and a rub sdk.
+            Along with that all of the automation test cases are also written in ruby. With this comes some experience in postgres.
+            Other duties in this role are load testing (using Jmeter) and building infrastructure to ensure smoother CI/CD in an Agile and Kanban
+            environment.  
+            <br />
+            I moved to Tennessee from Indiana to work there and absolutely
             love my job and the people I work with! The mission of Ramsey Solutions makes it a wonderful a fulfilling
             place to work.
+          </p>
+        </div>
+        <div>
+          <p><b><u>Test engineering at Ramsey Solutions</u></b></p>
+          <p>
+            Between July 2021 and July 2022 I worked as a test engineer in Quality Assurance for <a href="https://www.ramseysolutions.com/">Ramsey solutions</a>. 
+            With this came experience in writing thorough test plans, running and interpreting automation and learning how to test
+            a variety of new features, anything from minor front end changes to entire machine learning algorithms written in a multitude of different stacks.
           </p>
         </div>
         <div>
