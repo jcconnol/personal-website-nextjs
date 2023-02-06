@@ -76,6 +76,10 @@ a {
   }
 }
 
+.page-content {
+  max-width: 1250px;
+}
+
 footer {
   padding-top: 5%;
   padding-bottom: 7%;

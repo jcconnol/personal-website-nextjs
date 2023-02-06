@@ -20,8 +20,7 @@ const projectData = [
         title: 'Personal Jira Queue',
         description: 'A simple Amplify hosted React App with a NodeJS API, this allows for you to make a list of tickets that you are working on so other coworkers can see what you are going to work on next.',
         projectLink: '',
-        githubLink: 'https://github.com/jcconnol/jira-queue',
-        projectLink: 'https://www.jiraqueue.com/',
+        githubLink: 'https://github.com/jcconnol/jira-queue'
     },
     {
         title: 'This website',
