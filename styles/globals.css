@@ -4,6 +4,7 @@
 
 h1 {
   text-align: center;
+  font-size: 3rem;
 }
 
 h2 {
@@ -73,6 +74,10 @@ a {
   h1 b {
       font-size: 6vw;
   }
+}
+
+.page-content {
+  max-width: 1250px;
 }
 
 footer {
