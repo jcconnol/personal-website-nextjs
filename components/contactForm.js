@@ -36,6 +36,8 @@ const ContactForm = (props) => {
             null: null
         });
 
+        console.log(e)
+
         let headers = {
             headers: {
               "x-api-key": process.env.GATSBY_EMAIL_API_KEY,
@@ -102,6 +104,27 @@ const ContactForm = (props) => {
                             </div>
                         </div>
                         <br />
+                        {
+                            props.useCase == "3dPrint" ?
+                                <div>
+                                    <label>
+                                        Describe requested print
+                                        <br />
+                                        (include link if applicable) 
+                                    </label>
+                                    <div>
+                                        <textarea
+                                            className={styles["contact-message-input" ]}
+                                            type="text" name="message"
+                                            onChange={handleChange} 
+                                            placeholder=" Enter your message" 
+                                            required="required" />
+                                    </div>
+                                    <br />
+                                </div>
+                            :
+                                null
+                        }
                         <div>
                             <label>Message</label>
                             <div>

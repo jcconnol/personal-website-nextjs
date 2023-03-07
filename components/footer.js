@@ -1,6 +1,6 @@
 import * as React from "react"
 import styles from "../styles/footer.module.css"
-import { FaLinkedinIn } from 'react-icons/fa';
+import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { BsGithub } from 'react-icons/bs';
 import { CgFacebook } from 'react-icons/cg';
 
@@ -37,6 +37,12 @@ const Footer = (props) => {
                         target="_blank" 
                         rel="noreferrer">
                       <CgFacebook />
+                    </a>
+                    <a className={styles["footer-image"]}
+                        href="https://twitter.com/johncconnolly" 
+                        target="_blank" 
+                        rel="noreferrer">
+                      <FaTwitter />
                     </a>
                   </div>
               </div>

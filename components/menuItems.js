@@ -1,23 +1,23 @@
 const menuItems = [
   {
     name: 'About',
-    path: '/about/',
+    path: '/about',
   },
   {
     name: 'Experience',
-    path: '/experience/',
+    path: '/experience',
   },
   {
     name: 'Work',
-    path: '/work/',
+    path: '/work',
   },
   {
     name: 'Blog',
-    path: '/blog/',
+    path: '/blog',
   },
   {
     name: 'Contact',
-    path: '/contact/',
+    path: '/contact',
   }
 ];
 
