@@ -64,6 +64,15 @@
     text-align: center;
 }
 
-.print-model {
-    width: 100%;
+
+.print-model-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .print-model-container {
+      flex-direction: column;
+    }
 }

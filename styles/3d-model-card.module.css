@@ -1,0 +1,17 @@
+
+.print-model-card {
+    width: 100%;
+    padding: 3rem 1rem;
+}
+
+.print-model {
+    width: 100%;
+}
+
+.description {
+    text-align: center;
+}
+
+.price {
+    text-align: center;
+}

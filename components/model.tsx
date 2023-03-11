@@ -3,6 +3,7 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
 import { AmbientLight } from "three";
+import React from "react";
 
 interface ModelRenderProps {
   url: string;
@@ -10,7 +11,6 @@ interface ModelRenderProps {
 
 function ModelRender({ fileUrl }: ModelRenderProps, {colorHex}) {
   const geom = useLoader(STLLoader, fileUrl);
-  console.log(geom);
   return (
     <mesh geometry={geom}>
       <meshPhongMaterial color={colorHex} />
@@ -22,7 +22,7 @@ export default function Model({fileUrl, colorHex, cameraPosition}) {
   const light = new AmbientLight( colorHex, 1 ); // soft white light
   return (
       <Canvas
-        style={{ height: "100%", width: "50%" }}
+        style={{ height: "100%", width: "100%" }}
         camera={cameraPosition}
       >
         <Suspense fallback={"loading..."}>
