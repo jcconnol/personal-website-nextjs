@@ -21,8 +21,10 @@
   @media (min-width: 1000px)  {
     .page-content {
         margin-top: 8%;
-        padding-left: 15.5rem;
-        padding-right: 15.5rem;
+        margin: auto;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        max-width: 900px;
     }
   
     .mobile-nav {
@@ -62,8 +64,13 @@
 
 .center {
     text-align: center;
+    margin: auto;
 }
 
+.max-40 {
+    max-width: 40rem;
+    margin: 2rem auto;
+}
 
 .print-model-container {
     display: flex;

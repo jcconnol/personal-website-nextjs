@@ -4,6 +4,8 @@ import React from "react";
 
 export default function ThreeDModelCard({fileUrl, colorHex, cameraPosition, description, priceNumber}) {
     //TODO put different color options
+    var formattedPrice = (Math.round(priceNumber * 100) / 100).toFixed(2);
+
     return (
         <div className={styles["print-model-card"]}>
             <div className={styles["print-model"]}>
@@ -13,7 +15,7 @@ export default function ThreeDModelCard({fileUrl, colorHex, cameraPosition, desc
                 {description}
             </div>
             <div className={styles["price"]}>
-                ${priceNumber}
+                ${formattedPrice}
             </div>
         </div>
     );

@@ -1,7 +1,10 @@
 
 .print-model-card {
     width: 100%;
-    padding: 3rem 1rem;
+    padding: 3rem;
+    margin: 7px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px darkgrey;
 }
 
 .print-model {
@@ -15,3 +18,5 @@
 .price {
     text-align: center;
 }
+
+

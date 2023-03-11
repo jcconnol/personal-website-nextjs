@@ -19,9 +19,12 @@ export default function Index() {
             <h1>
                 <b>3D Printing</b>
             </h1>
-            <p className={styles.center}>
-               If you would like something 3d printed, please  fill out the form below
-            </p>
+            <h3 className={`${styles.center} ${styles["max-40"]}`}>
+               Check out the items below. Move them around and zoom in and out to get a better view of them.
+            </h3>
+            <h3 className={`${styles.center} ${styles["max-40"]}`}>
+              If you would like something 3d printed, please  fill out the form at the bottom of the page.
+            </h3>
             <div className={styles["print-model-container"]}>
               <ThreeDModelCard 
                 fileUrl={"/backpack_holder.stl"} 
@@ -37,12 +40,22 @@ export default function Index() {
                 description="Piggy bank."
                 priceNumber={2}
                 />
+              
+            </div>
+            <div className={styles["print-model-container"]}>
               <ThreeDModelCard 
-                fileUrl={"/whistle.stl"} 
-                colorHex="red" 
-                cameraPosition={{ position: [50, 50, 50], fov: 50 }}
-                description="Small and very loud whistle." 
-                priceNumber={0.50}
+                  fileUrl={"/whistle.stl"} 
+                  colorHex="red" 
+                  cameraPosition={{ position: [50, 50, 50], fov: 50 }}
+                  description="Small and very loud whistle." 
+                  priceNumber={0.50}
+                  />
+              <ThreeDModelCard 
+                fileUrl={"/DeskPenHolder.stl"} 
+                colorHex="black" 
+                cameraPosition={{ position: [100, 50, 100], fov: 50 }}
+                description="Pin this to your desk and hold 5 pens" 
+                priceNumber={1.00}
                 />
             </div>
             <ContactForm useCase="3dPrint" />

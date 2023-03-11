@@ -22,7 +22,7 @@ export default function Model({fileUrl, colorHex, cameraPosition}) {
   const light = new AmbientLight( colorHex, 1 ); // soft white light
   return (
       <Canvas
-        style={{ height: "100%", width: "100%" }}
+        style={{ height: "14rem", width: "100%" }}
         camera={cameraPosition}
       >
         <Suspense fallback={"loading..."}>
