@@ -11,6 +11,7 @@ export default function Header(props) {
     {name: 'About', path: '/about'},
     {name: 'Experience', path: '/experience'},
     {name: 'Work', path: '/work'},
+    {name: '3D-Printing', path: '/3d-printing'},
     {name: 'Contact', path: '/contact'},
     {name: 'Blog', path: '/blog'}
   ];

@@ -58,7 +58,9 @@ export default function Index() {
                 priceNumber={1.00}
                 />
             </div>
-            <ContactForm useCase="3dPrint" />
+            <div className={styles["form-container"]}>
+              <ContactForm useCase="3dPrint" />
+            </div>
             <Footer />
             </div>
         </Layout>
