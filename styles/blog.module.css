@@ -2,6 +2,7 @@
     margin: auto;
     max-width: 1250px;
     background-color: white;
+    color: black;
 }
 
 @media (max-width: 630px)  {
@@ -36,7 +37,7 @@
   }
 
 .page-content p {
-    padding-bottom: 25px;
+    padding-bottom: 5%;
 }
 
 .blog-post-header {
@@ -59,5 +60,16 @@
 @media only screen and (min-width: 800px) {
     .blog-post {
         margin: auto;
+        font-size: 0.5em;
     }
 }
+
+.blog-post-header {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.blog-post-description {
+    color: black;
+}
+

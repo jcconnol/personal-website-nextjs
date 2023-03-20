@@ -1,14 +1,13 @@
-.page-content {
-  background-color: white;
-}
 
 @media (max-width: 630px)  {
-    .page-content {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-    }
+  .page-content {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      color: black;
+      background-color: white;
   }
-
+}
+  
   @media (min-width: 630px)  {
     .page-content {
         margin-top: 8%;
@@ -41,7 +40,7 @@
 
 
 .blog-content h1 {
-  font-size: 4.5em;
+  font-size: 3.5em;
   text-align: center;
   margin-bottom: 0;
 }
