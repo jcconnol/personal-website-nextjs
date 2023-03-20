@@ -1,6 +1,7 @@
 .page-content {
     margin: auto;
     max-width: 1250px;
+    background-color: white;
 }
 
 @media (max-width: 630px)  {
