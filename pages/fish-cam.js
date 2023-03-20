@@ -11,13 +11,13 @@ export default function FishCam() {
   return (
     <Layout>
       <Header title={"Fish Cam"}/>
-      <div className={`${styles["page-content"]} ${styles.fadeIn}`}>
+      <div className={`${styles["page-content"]} ${styles["fish-cam-content"]} ${styles.fadeIn}`}>
         <Seo
           title={"Fish Cam"}
           description={"A live feed of the fish of John Connolly."}
         />
         <h1>
-          <b>Fish Cam</b>
+          Fish Cam
         </h1>
 
         <FishCamera />
