@@ -28,7 +28,7 @@ export default function FishCamera() {
 
         getFishData()
 
-        const interval = setInterval(() => getFishData(), 15000)
+        const interval = setInterval(() => getFishData(), 2000)
 
         return () => {
           clearInterval(interval);
