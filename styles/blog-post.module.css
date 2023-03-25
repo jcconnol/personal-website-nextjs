@@ -39,6 +39,13 @@
   }
 
 
+@media (max-width: 800px)  {
+  .blog-content {
+      background-color: white;
+      padding: 5%;
+  }
+}
+
 .blog-content h1 {
   font-size: 3.5em;
   text-align: center;

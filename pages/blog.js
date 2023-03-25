@@ -32,7 +32,7 @@ const BlogIndex = ({ posts }) => {
     <Layout>
       <SEO title="All posts" />
       <Header title="blog" />
-      <div className={`${styles["page-content"]}`}>
+      <div className={`${styles["page-content"]} ${styles["blog-page-content"]}`}>
         <h1>
           <b>Blog Posts</b>
         </h1>

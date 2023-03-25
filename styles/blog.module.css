@@ -78,3 +78,9 @@
     color: black;
 }
 
+@media (max-width: 800px)  {
+    .blog-page-content {
+        background-color: white;
+        padding: 5%;
+    }
+}
