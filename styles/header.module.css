@@ -26,17 +26,12 @@
   display: none;
 }
 
-/*
-.topnav a:hover {
-  background-color: #252525;
-  color: white;
-}
-*/
 .left {
   margin-right:auto;
 }
 
 @media screen and (max-width: 625px) {
+
   .topnav a:not(:first-child) {
     display: none;
   }

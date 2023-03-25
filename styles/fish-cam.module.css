@@ -1,3 +1,7 @@
+.page-content {
+    color: black;
+}
+
 .fish-cam-content {
     color: black;
     background-color: white;
@@ -6,4 +10,10 @@
 .fish-image {
     padding-top: 3%;
     width: 100%;
+}
+
+@media (max-width: 800px) {
+    .fish-cam-content{
+      padding: 5%;
+    }
 }

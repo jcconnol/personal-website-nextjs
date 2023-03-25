@@ -4,7 +4,7 @@ import Header from "../components/header"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import FishCamera from "../components/fishCamera"
-import styles from "../styles/about.module.css"
+import styles from "../styles/fish-cam.module.css"
 
 export default function FishCam() {
   /* TODO improvement is to make map and have info be in json file */
