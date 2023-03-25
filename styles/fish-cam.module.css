@@ -12,6 +12,10 @@
     width: 100%;
 }
 
+.fish-cam-content{
+    padding: 5% 10%;
+}
+
 @media (max-width: 800px) {
     .fish-cam-content{
       padding: 5%;
