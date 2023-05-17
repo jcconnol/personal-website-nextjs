@@ -30,14 +30,14 @@ export default function Index() {
                 fileUrl={"/backpack_holder.stl"} 
                 colorHex="black" 
                 cameraPosition={{ position: [-60, 70, -80], fov: 50 }}
-                description="Backpack holder for desk."
+                description="Backpack holder for desk"
                 priceNumber={6}
                 />
               <ThreeDModelCard 
                 fileUrl={"/little_piggy_bank.stl"} 
                 colorHex="green" 
                 cameraPosition={{ position: [50, 50, -70], fov: 70 }} 
-                description="Piggy bank."
+                description="Piggy bank"
                 priceNumber={2}
                 />
               
@@ -47,7 +47,7 @@ export default function Index() {
                   fileUrl={"/whistle.stl"} 
                   colorHex="red" 
                   cameraPosition={{ position: [50, 50, 50], fov: 50 }}
-                  description="Small and very loud whistle." 
+                  description="Small and very loud whistle" 
                   priceNumber={0.50}
                   />
               <ThreeDModelCard 
