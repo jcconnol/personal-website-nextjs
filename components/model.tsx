@@ -11,6 +11,7 @@ interface ModelRenderProps {
 
 function ModelRender({ fileUrl }: ModelRenderProps, {colorHex}) {
   const geom = useLoader(STLLoader, fileUrl);
+  var rotation = 0;
   return (
     <mesh geometry={geom}>
       <meshPhongMaterial color={colorHex} />
@@ -28,7 +29,7 @@ export default function Model({fileUrl, colorHex, cameraPosition}) {
         <Suspense fallback={"loading..."}>
           <ModelRender fileUrl={fileUrl} colorHex={colorHex} />
         </Suspense>
-        <OrbitControls panSpeed={0.5} rotateSpeed={0.4} />
+        <OrbitControls panSpeed={0.5} rotateSpeed={0.4}  />
         <ambientLight color={colorHex} intensity={1}/>
         <pointLight position={[100,100,100]} intensity="0.2"/>
       </Canvas>
