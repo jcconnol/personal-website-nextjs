@@ -1,4 +1,5 @@
 import React from "react"
+import { BsCloudHaze2Fill } from "react-icons/bs";
 import styles from "../styles/github-project.module.css"
 // import OpenFolderIcon from "../folder_open_icon.svg"
 // import GithubIcon from "../github_icon.svg"
@@ -29,7 +30,7 @@ const GithubProject = (props) => {
             <div className={styles["blank-card"]}></div>
         :
             <div className={styles["project-inner"]}>
-                <h4>{title}</h4>
+                <h3>{title}</h3>
                 <p>{description}</p>
                 <div className={styles["project-imgs"]}>
                     {

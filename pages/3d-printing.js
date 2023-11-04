@@ -31,7 +31,7 @@ export default function Index() {
                 fileUrl={"/backpack_holder.stl"}
                 colorHex="black"
                 cameraPosition={{ position: [-60, 70, -80], fov: 50 }}
-                description="Backpack holder for desk."
+                description="Backpack holder for desk"
                 priceNumber={6}
                 />
               <ThreeDModelCard
