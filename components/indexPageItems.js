@@ -11,9 +11,9 @@ const indexPageItems = [
         githubLink: 'https://github.com/jcconnol/generation-bot-react'
     },
     {
-        title: 'Personal Jira Queue',
-        description: 'A simple Amplify hosted React App with a NodeJS API, this allows for you to make a list of tickets that you are working on so other coworkers can see what you are going to work on next.',
-        githubLink: 'https://github.com/jcconnol/jira-queue'
+        title: 'COTC Video Searcher',
+        description: 'Using a vectorization AI model, you can search for a cosine similar COTC video from a prompt',
+        projectLink: 'https://main.d2v1jdxm4tga6h.amplifyapp.com/',
     },
 ];
 
