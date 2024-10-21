@@ -4,33 +4,33 @@
         padding-right: 1.25rem;
     }
   }
-  
+
   @media (min-width: 630px)  {
     .page-content {
         margin-top: 8%;
         padding-left: 6.5rem;
         padding-right: 6.5rem;
     }
-  
+
     .mobile-nav {
         display: none;
         visibility: hidden;
     }
   }
-  
+
   @media (min-width: 1000px)  {
     .page-content {
         margin-top: 8%;
         padding-left: 15.5rem;
         padding-right: 15.5rem;
     }
-  
+
     .mobile-nav {
         display: none;
         visibility: hidden;
     }
   }
-  
+
   .page-content p {
     padding-bottom: 25px;
   }
@@ -40,15 +40,19 @@
 }
 
 .work-content {
-    color: black;
+    color: white;
     letter-spacing: 1.2px;
+}
+
+.work-project {
+    background-color: black;
 }
 
 .project-grid {
     display: flex;
 	flex-wrap: wrap;
     margin: auto;
-   
+
 }
 
 @keyframes fadeIn {
@@ -66,7 +70,6 @@
         max-width: 100%;
         flex: 1 0 100%;
         box-sizing: border-box;
-        background-color: white;
         color: black;
         padding: 5%;
     }
@@ -87,7 +90,6 @@
         max-width: 33%;
         flex: 1 0 33%;
         box-sizing: border-box;
-        background-color: white;
         color: black;
         padding: 2%;
     }
@@ -98,5 +100,5 @@
 }
 
 .project-imgs a{
-    padding: 0 6%;    
+    padding: 0 6%;
 }
