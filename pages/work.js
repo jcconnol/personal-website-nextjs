@@ -1,4 +1,5 @@
 import * as React from "react"
+import '../styles/work.module.css'
 import Footer from "../components/footer"
 import Header from "../components/header"
 import GithubProject from "../components/github-project"
@@ -26,7 +27,7 @@ export default function Index() {
               ProjectData.map((item, index) => {
                 return (
                   <div className={styles.project} key={index}>
-                    <GithubProject 
+                    <GithubProject
                       title={item.title}
                       description={item.description}
                       projectLink={item.projectLink}

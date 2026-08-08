@@ -5,15 +5,14 @@ const indexPageItems = [
         githubLink: 'https://github.com/jcconnol/prank-chrome-extension'
     },
     {
-        title: 'Text Generation Bot',
-        description: 'This uses Markov Chains to generate different and unique text base on topic. For example, generate a unique poem or rap song.',
-        projectLink: 'https://main.d1y4xtb1b93rjd.amplifyapp.com/',
-        githubLink: 'https://github.com/jcconnol/generation-bot-react'
+        title: 'Adoptable Animal Searcher',
+        description: 'Using image and text vectorization adoptable pets are loaded in and searched on based on an image or text prompt.',
+        projectLink: 'https://main.d3ovvbnmxvv1ue.amplifyapp.com/pet-adoption-searching'
     },
     {
-        title: 'Personal Jira Queue',
-        description: 'A simple Amplify hosted React App with a NodeJS API, this allows for you to make a list of tickets that you are working on so other coworkers can see what you are going to work on next.',
-        githubLink: 'https://github.com/jcconnol/jira-queue'
+        title: 'COTC Video Searcher',
+        description: 'Using a vectorization AI model, you can search for a cosine similar COTC video from a prompt',
+        projectLink: 'https://main.d3ovvbnmxvv1ue.amplifyapp.com/cotc-video-searching',
     },
 ];
 
