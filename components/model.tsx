@@ -2,14 +2,14 @@ import { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
-import { AmbientLight } from "three";
 import React from "react";
 
 interface ModelRenderProps {
-  url: string;
+  fileUrl: string;
+  colorHex: string;
 }
 
-function ModelRender({ fileUrl }: ModelRenderProps, {colorHex}) {
+function ModelRender({ fileUrl, colorHex }: ModelRenderProps) {
   const geom = useLoader(STLLoader, fileUrl);
   return (
     <mesh geometry={geom}>
@@ -19,7 +19,6 @@ function ModelRender({ fileUrl }: ModelRenderProps, {colorHex}) {
 }
 
 export default function Model({fileUrl, colorHex, cameraPosition}) {
-  const light = new AmbientLight( colorHex, 1 ); // soft white light
   return (
       <Canvas
         style={{ height: "14rem", width: "100%" }}

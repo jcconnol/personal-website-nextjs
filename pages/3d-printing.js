@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Layout from "../components/layout"
 import Header from "../components/header"
 import Seo from "../components/seo"
@@ -10,11 +9,11 @@ import styles from "../styles/3d-printing.module.css"
 export default function Index() {
     return (
         <Layout>
-        <Header title={"about"}/>
+        <Header title={"3D printing"}/>
         <div className={`${styles["page-content"]} ${styles["about-content"]} ${styles.fadeIn}`}>
           <Seo
-            title={"About"}
-            description={"About page for John Connolly. A tale about my life's story and work history."}
+            title={"3D Printing"}
+            description={"Browse 3D-printable items and request a custom print from John Connolly."}
           />
             <h1>
                 <b>3D Printing</b>
