@@ -1,5 +1,5 @@
 import { writeFileSync } from 'fs';
-import globby from 'globby';
+import { globby } from 'globby';
 import prettier from 'prettier';
 import unixify from 'unixify';
 
@@ -40,7 +40,7 @@ async function generate() {
     </urlset>
     `;
 
-  const formatted = prettier.format(sitemap, {
+  const formatted = await prettier.format(sitemap, {
     ...prettierConfig,
     parser: 'html'
   });
