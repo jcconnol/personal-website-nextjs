@@ -11,22 +11,14 @@ export default function Header(props) {
     {name: 'About', path: '/about'},
     {name: 'Experience', path: '/experience'},
     {name: 'Work', path: '/work'},
-    {name: '3D-Printing', path: '/3d-printing'},
     {name: 'Contact', path: '/contact'},
     {name: 'Blog', path: '/blog'}
   ];
   
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [hovered, setStyles] = React.useState("");
-  
-  var backgroundColor = "white";
-  var textColor = "black";
-
-  if(title !== "index"){
-    backgroundColor = "black";
-    textColor = "white";
-  }
-
+  var backgroundColor = "transparent";
+  var textColor = "white";
 
   //change only one on hover
   var buttonStyles = [];
@@ -35,14 +27,8 @@ export default function Header(props) {
   }
 
   if(hovered){
-    if(buttonStyles[hovered].backgroundColor === "black"){
-      buttonStyles[hovered].backgroundColor = "white"
-      buttonStyles[hovered].color = "black"
-    }
-    else{
-      buttonStyles[hovered].backgroundColor = "black"
-      buttonStyles[hovered].color = "white"
-    }
+    buttonStyles[hovered].backgroundColor = "white"
+    buttonStyles[hovered].color = "black"
   }
   
   return (

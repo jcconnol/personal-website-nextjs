@@ -49,6 +49,23 @@
     margin: 0;
 }
 
+.blog-post-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    transition: transform 180ms ease;
+}
+
+.blog-post-link:hover {
+    transform: translateY(-0.2rem);
+}
+
+.blog-post-link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 0.35rem;
+}
+
 .blog-post-header a {
     color: darkblue;
 }
