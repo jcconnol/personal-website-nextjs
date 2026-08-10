@@ -3,7 +3,7 @@ import React from "react";
 import styles from "../styles/contactForm.module.css"
 
 //TODO make form disappear after submitted
-const ContactForm = (props) => {
+const ContactForm = () => {
 
     const initialFormData = Object.freeze({
         emailAddress: "",
@@ -104,27 +104,6 @@ const ContactForm = (props) => {
                             </div>
                         </div>
                         <br />
-                        {
-                            props.useCase == "3dPrint" ?
-                                <div>
-                                    <label>
-                                        Describe requested print
-                                        <br />
-                                        (include link if applicable) 
-                                    </label>
-                                    <div>
-                                        <textarea
-                                            className={styles["contact-message-input" ]}
-                                            type="text" name="message"
-                                            onChange={handleChange} 
-                                            placeholder=" Enter your message" 
-                                            required="required" />
-                                    </div>
-                                    <br />
-                                </div>
-                            :
-                                null
-                        }
                         <div>
                             <label>Message</label>
                             <div>

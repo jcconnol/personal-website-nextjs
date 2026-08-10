@@ -1,40 +1,48 @@
 .contact-form {
     padding-left: 10%;
     padding-right: 10%;
-    color: black;
+    color: #fff;
     margin: auto;
     text-align: center;
 }
 
 .contact-name-input {
     margin-top: 5px; 
-    background-color: #fff; 
+    color: #fff;
+    background-color: #171717;
+    border: 1px solid rgba(255, 255, 255, 0.45);
     height:35px; 
     width:235px; 
 }
 
 .contact-email-input {
     margin-top: 5px;
-    background-color: #fff; 
+    color: #fff;
+    background-color: #171717;
+    border: 1px solid rgba(255, 255, 255, 0.45);
     height:35px; 
     width:235px;
 }
 
 .contact-message-input {
     margin-top: 5px;
-    background-color: #fff; 
+    color: #fff;
+    background-color: #171717;
+    border: 1px solid rgba(255, 255, 255, 0.45);
     height:50px; 
     width:235px;
 }
 
 .contact-submit-button {
     font-size:14px; 
-    background-color:gray; 
+    border: 1px solid #fff;
+    border-radius: 999px;
+    background-color:#2a2a2a;
     color:#fff; 
     font-weight:bold; 
     padding:10px 35px; 
 }
 
 .contact-submit-button:hover {
-    background-color:black; 
+    background-color:#4a4a4a;
 }

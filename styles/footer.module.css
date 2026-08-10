@@ -13,7 +13,7 @@
     justify-content: center;
     text-align: center;
     font-size: large;
-    color: black;
+    color: #e5e5e5;
     padding: 3px;
 }
 
@@ -25,6 +25,6 @@
 }
 
 .footer-image {
-    color: black;
+    color: #fff;
     padding: 0 0.5em 0.5em 0.5em;
 }

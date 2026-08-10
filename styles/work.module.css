@@ -49,10 +49,10 @@
 }
 
 .project-grid {
-    display: flex;
-	flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+    gap: 1.25rem;
     margin: auto;
-
 }
 
 @keyframes fadeIn {
@@ -65,34 +65,8 @@
     animation: fadeIn 2.3s;
  }
 
-@media (max-width: 725px) {
-    .project {
-        max-width: 100%;
-        flex: 1 0 100%;
-        box-sizing: border-box;
-        color: black;
-        padding: 5%;
-    }
-}
-
-@media (min-width: 725px) {
-    .project {
-        max-width: 50%;
-        flex: 1 0 50%;
-        box-sizing: border-box;
-        color: black;
-        padding: 2%;
-    }
-}
-
-@media (min-width: 1440px) {
-    .project {
-        max-width: 33%;
-        flex: 1 0 33%;
-        box-sizing: border-box;
-        color: black;
-        padding: 2%;
-    }
+.project {
+    min-width: 0;
 }
 
 .project-imgs {

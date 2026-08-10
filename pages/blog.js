@@ -40,30 +40,33 @@ const BlogIndex = ({ posts }) => {
           const title = post.frontmatter.title || post.slug
           return (
             <div className={styles["page-content"]} key={index}>
-              <article
-                key={"blog/" + post.slug}
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
+              <Link
+                className={styles["blog-post-link"]}
+                href={"/blog/" + post.slug}
+                itemProp="url"
               >
-                <header>
-                  <h2 className={styles["blog-post-header"]}>
-                    <Link href={"blog/" + post.slug} itemProp="url">
+                <article
+                  className="post-list-item"
+                  itemScope
+                  itemType="http://schema.org/Article"
+                >
+                  <header>
+                    <h2 className={styles["blog-post-header"]}>
                       <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    className={styles["blog-post-description"]}
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
+                    </h2>
+                    <small>{post.frontmatter.date}</small>
+                  </header>
+                  <section>
+                    <p
+                      className={styles["blog-post-description"]}
+                      dangerouslySetInnerHTML={{
+                        __html: post.frontmatter.description || post.excerpt,
+                      }}
+                      itemProp="description"
+                    />
+                  </section>
+                </article>
+              </Link>
             </div>
           )
         })}

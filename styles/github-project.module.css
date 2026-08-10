@@ -4,7 +4,9 @@
 }
 
 .project-inner {
-    background-color: #edeeee;
+    color: #fff;
+    background: linear-gradient(145deg, rgba(36, 36, 36, 0.96), rgba(12, 12, 12, 0.98));
+    border: 1px solid rgba(255, 255, 255, 0.28);
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -15,7 +17,14 @@
     height: 100%;
     padding: 2rem 1.75rem;
     border-radius: 15px;
-    box-shadow: 10px 10px 15px darkgray;
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.3);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.project-inner:hover {
+    transform: translateY(-0.35rem);
+    border-color: #fff;
+    box-shadow: 0 1.25rem 3rem rgba(255, 255, 255, 0.12);
 }
 
 .project-inner .project-imgs {
@@ -26,8 +35,13 @@
     height: 32px;
     width: 32px;
     margin-right: 5%;
+    filter: brightness(0) invert(1);
+}
+
+.github-project-image {
+    filter: brightness(0) invert(1);
 }
 
 .blank-card {
-    background-color: white;
+    background-color: transparent;
 }
